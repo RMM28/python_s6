@@ -1,3 +1,4 @@
+#To find Compund Interest
 p=float(input("Enter the amount to find compund interest to: "))
 r=int(input("Enter the rate of interest as %: "))
 t=int(input("Enter the number of years: "))
