@@ -35,15 +35,14 @@ class ExpenseTracker:
 
         # Buttons
         self.button_add = tk.Button(root, text="Add Item", command=self.add_expense)
-        self.button_add.grid(row=2, column=0, columnspan=2, padx=5, pady=5, sticky="we")
+        self.button_add.grid(row=3, column=0, columnspan=2, padx=5, pady=5, sticky="we")
 
         self.button_graph = tk.Button(root, text="Show Graph", command=self.show_graph)
-        self.button_graph.grid(row=3, column=0, columnspan=2, padx=5, pady=5, sticky="we")
+        self.button_graph.grid(row=4, column=0, columnspan=2, padx=5, pady=5, sticky="we")
 
         # Listbox
-        self.listbox_expenses = tk.Listbox(root, width=40)
+        self.listbox_expenses = tk.Listbox(root, width=50)
         self.listbox_expenses.grid(row=5, column=0, columnspan=2, padx=5, pady=5)
-
         self.load_expenses_from_file()
 
     def add_expense(self):
